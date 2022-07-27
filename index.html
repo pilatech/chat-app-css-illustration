@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -15,7 +19,7 @@
  <div class="container">
   <div class="illustration">
     <header class="illustration__header">
-     <div class="illustration__arror-icon"></div>
+     <div class="illustration__arrow-icon"></div>
      <img src="images/avatar.jpg" alt="avatar" class="illustration__avatar">
      <h2 class="illustration__title">
       Samuel Green
@@ -36,17 +40,17 @@
        Could you send over some pictures of your dog, please?
       </p>
      </blockquote>
-     <blockquote class="illustration__bubble illustration__bubble--received-images">
+     <blockquote class="illustration__bubble  illustration__bubble--received illustration__bubble--received-images">
       <img src="images/dog-image-1.jpg" alt="a dog panting" class="illustration__image">
       <img src="images/dog-image-2.jpg" alt="dog lying down" class="illustration__image">
       <img src="images/dog-image-3.jpg" alt="dog walking" class="illustration__image">
      </blockquote>
-     <blockquote class="illustration__bubble illustration__bubble--recieved">
+     <blockquote class="illustration__bubble illustration__bubble--received">
       <p>
        Here are a few pictures. She’s a happy girl!
       </p>
      </blockquote>
-     <blockquote class="illustration__bubble illustration__bubble--recieved">
+     <blockquote class="illustration__bubble illustration__bubble--received">
       <p>
        Can you make it?
       </p>
@@ -56,23 +60,28 @@
        She looks so happy! The time we discussed works. How long shall I take her out for?
       </p>
      </blockquote>
-     <blockquote class="illustration__bubble illustration__bubble--received illustrator__bubble--offer">
-      <p>
+     <blockquote class="illustration__bubble  illustration__bubble--offer">
+      <p 
+      class="illustration__bubble--offer-content"
+      >
        30 minute walk
-       <strong class="illustrator__price">$29</strong>
+       <strong class="illustration__price">$29</strong>
       </p>
      </blockquote>
-     <blockquote class="illustration__bubble illustration__bubble--received illustrator__bubble--offer">
-      <p>
+     <blockquote class="illustration__bubble  illustration__bubble--offer">
+      <p class="illustration__bubble--offer-content">
        1 hour walk
-       <strong class="illustrator__price">$49</strong>
+       <strong class="illustration__price">$49</strong>
       </p>
      </blockquote>
+     <div class="form">
+      <p class="form__input">
+       Type a message...
+      </p>
+      <div class="form__btn"><span class="form__btn-icon"></span>
+      </div>
     </div>
-    <form class="form">
-      <input type="text" placeholder="Type a message..." class="form__input">
-      <button class="btn" type="submit"><span class="btn__icon"></span></button>
-    </form>
+    </div>
   </div>
   <div class="content">
    <h1 class="title">
